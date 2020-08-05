@@ -16,6 +16,11 @@ eureka:
 jwt:
     secret: HRO18CJXzXurQreU2RkD
     expiration: 43200
+   
+security:
+    oauth2:
+        client:
+            resource-ids: resources
 
 spring:
     datasource:
