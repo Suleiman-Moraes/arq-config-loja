@@ -13,14 +13,11 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 3000
 
-jwt:
-    secret: HRO18CJXzXurQreU2RkD
-    expiration: 43200
-   
 security:
-    oauth2:
-        client:
-            resource-ids: resources
+    jwt:
+        token:
+            secret-key: 12345
+            expire-length: 28800000
 
 spring:
     datasource:
