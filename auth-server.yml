@@ -33,3 +33,6 @@ spring:
         hibernate:
             ddl-auto: none
         show-sql: true
+
+show:
+    swagger: true
