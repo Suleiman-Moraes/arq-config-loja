@@ -32,3 +32,5 @@ security:
     resource:
       userInfoUri: ${authserver.hostname}/user
       id: orders
+show:
+    swagger: true
