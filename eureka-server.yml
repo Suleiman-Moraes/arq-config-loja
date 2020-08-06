@@ -1,6 +1,14 @@
 server:
   port: 9091
 
+spring:
+  output:
+    ansi:
+      enabled: NEVER
+security:
+  basic:
+    enabled: false
+
 eureka:
   instance:
     hostname: localhost
