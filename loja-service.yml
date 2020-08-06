@@ -1,17 +1,15 @@
-server:
-  port: 9093
-
-eureka:
-  instance:
-    hostname: localhost
-    port: 9091
-  client:
+server: 
+  port: 6060 
+ 
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: ${EUREKA_URI:http://localhost:9091/eureka}
     registerWithEureka: true
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
-  server:
-    wait-time-in-ms-when-sync-empty: 3000
+    fetchRegistry: true
+    registryFetchIntervalSeconds: 5
+  instance: 
+    preferIpAddress: true
 
 spring:
     datasource:
