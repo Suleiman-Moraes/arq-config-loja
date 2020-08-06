@@ -7,11 +7,3 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:9091/eureka}
   instance: 
     preferIpAddress: true
-
-authserver:
-  hostname: http://localhost:9092
-security:
-  oauth2:
-    resource:
-      userInfoUri: ${authserver.hostname}/user
-      id: portal-server
