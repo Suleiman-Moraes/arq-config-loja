@@ -31,6 +31,6 @@ security:
   oauth2:
     resource:
       userInfoUri: ${authserver.hostname}/user
-      id: orders
+      id: portal-server
 show:
     swagger: true
